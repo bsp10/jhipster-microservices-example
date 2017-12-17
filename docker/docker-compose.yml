@@ -32,7 +32,8 @@ services:
             - JHIPSTER_REGISTRY_PASSWORD=admin
     store-mongodb:
         image: mongo:3.2.10
-    
+        ports:
+            - "27017:27017"
     jhipster-registry:
         extends:
             file: jhipster-registry.yml
